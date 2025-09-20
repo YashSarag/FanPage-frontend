@@ -157,7 +157,7 @@ function Fanwall(){
             loading && <div className='flex justify-center items-center absolute top-0 w-screen h-screen z-[200]'>
                 <div className='absolute bottom-[200px] flex flex-col justify-center itmes-center'>
                     <Loader/>
-                    <p className='text-black font-bold mt-[15px]'>Loading</p>
+                    {/* <p className='text-black font-bold mt-[15px]'>Loading</p> */}
                 </div>
             </div>
         }
