@@ -21,7 +21,7 @@ function App() {
   const {menuClick,setMenuClick,menuHandler} = useContext(CounterContext);
   return (
     <div className="relative">
-        <div className='absolute left-5 top-5 text-4xl cursor-pointer z-[200]'>
+        <div className='absolute left-5 top-5 text-4xl cursor-pointer z-[200] nav-links-2'>
               {!menuClick &&
                 <GiHamburgerMenu onClick={menuHandler} className=""/>
               }
