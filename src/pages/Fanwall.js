@@ -153,6 +153,14 @@ function Fanwall(){
 
   return (
     <div className='w-full'>
+        {
+            loading && <div className='flex justify-center items-center absolute top-0 w-screen h-screen z-[200]'>
+                <div className='absolute bottom-[200px] flex flex-col justify-center itmes-center'>
+                    <Loader/>
+                    <p className='text-black font-bold mt-[15px]'>Loading</p>
+                </div>
+            </div>
+        }
         <a href='#form'>
             <button type='submit' className='fanwall-submit relative bg-white max-w-max mx-auto px-[20px] py-[6px] rounded-md block mb-[20px]'>
                 <p>Write your message for Akshaan</p>
@@ -167,7 +175,7 @@ function Fanwall(){
                 
                     loading?
 
-                    (<Loader/>):
+                    (<div></div>):
 
                     cards.map((card)=>(
                         <div style={{backgroundColor: card.color}}
