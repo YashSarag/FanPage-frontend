@@ -59,7 +59,7 @@ function QuestionCard({question,options,ans,file}){
     console.log("Ans",selectedOption);
   return (
     <div className='q-card mb-[20px] w-[91%] max-w-[400px] h-[550px] mx-auto rounded-[25px] overflow-hidden'>
-        <div className={`h-full w-full relative q-card-container ${flip === true  ? "q-card-container-submit" : ""} pb-[50px]`}>
+        <div className={`h-full w-full relative q-card-container ${flip === true  ? "q-card-container-submit" : ""}`}>
             <div className={`front-q-card ${flip === true ? "pointer-events-none" : ""}`}>
                 <div className='flex flex-col gap-y-[30px] h-full w-full px-[15px] py-[30px] text-slate-100 text-[20px] relative z-[105]'>
                     {
@@ -174,7 +174,7 @@ function QuestionCard({question,options,ans,file}){
                                 setSelectedOption('');
                                 setScore(0)
                         }}
-                            className={`${color} px-[18px] py-[10px] rounded-md font-semibold`}
+                            className={`${color} px-[18px] py-[10px] rounded-md font-semibold mb-[15px]`}
                         >
                         <span className='opacity-80'>Restart Quiz</span>
                     </button>
