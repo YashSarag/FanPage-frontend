@@ -145,7 +145,7 @@ function QuestionCard({question,options,ans,file}){
 
 
 
-                <div className='z-[500] flex flex-col w-[80%] mx-auto mt-[50px] gap-[20px]'>
+                <div className='z-[500] flex flex-col w-[80%] mx-auto mt-[50px] gap-[20px] mb-[15px]'>
                     <button onClick={()=>{setFlip(false)}}
                         className={`${color} px-[18px] py-[10px] rounded-md font-semibold`}
                     >
@@ -174,7 +174,7 @@ function QuestionCard({question,options,ans,file}){
                                 setSelectedOption('');
                                 setScore(0)
                         }}
-                            className={`${color} px-[18px] py-[10px] rounded-md font-semibold mb-[15px]`}
+                            className={`${color} px-[18px] py-[10px] rounded-md font-semibold `}
                         >
                         <span className='opacity-80'>Restart Quiz</span>
                     </button>
