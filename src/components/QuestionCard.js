@@ -59,7 +59,7 @@ function QuestionCard({question,options,ans,file}){
     console.log("Ans",selectedOption);
   return (
     <div className='q-card mb-[20px] w-[91%] max-w-[400px] h-[550px] mx-auto rounded-[25px] overflow-hidden'>
-        <div className={`h-full w-full relative q-card-container ${flip === true  ? "q-card-container-submit" : ""}`}>
+        <div className={`h-full w-full relative q-card-container ${flip === true  ? "q-card-container-submit" : ""} pb-[15px]`}>
             <div className={`front-q-card ${flip === true ? "pointer-events-none" : ""}`}>
                 <div className='flex flex-col gap-y-[30px] h-full w-full px-[15px] py-[30px] text-slate-100 text-[20px] relative z-[105]'>
                     {
