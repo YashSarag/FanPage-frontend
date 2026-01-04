@@ -29,7 +29,7 @@ function BirthdayPage(){
                 <Confetti/>
                 <BirthdayCard/>
             </div>) : (
-                <div className='relative'>
+                <div className='relative z-[100]'>
                     <div className='flex flex-col justify-center items-center'>
                         <div className='text-center mb-[30px] text-[32px] bg-clip-text text-transparent font-bold h-full timer-caption tracking-[1px] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500'>
                             Not just a timer… It's excitement in numbers!
