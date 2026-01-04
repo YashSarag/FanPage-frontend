@@ -639,3 +639,22 @@ html{
     background-color: rgba(255,255,255,0.65);
     z-index: 101;
 }
+
+@media(max-width:460px){
+    .birthday-bg{
+        background: url(./assets/Birthday-bg.png);
+        background-size: cover;
+    }
+    .birthday-bg-container{
+        scale: 0.9;
+        position: relative;
+        top: -20px;
+    }
+    .cake-on-way{
+        display: none;
+    }
+
+    .birthday-cake{
+        display: block;
+    }
+}
