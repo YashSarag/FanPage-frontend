@@ -13,6 +13,7 @@ import { useState } from "react";
 import Timer from "./components/Timer.jsx";
 import BirthdayPage from "./pages/BirthdayPage.js";
 import NavBar2 from "./components/NavBar2.js";
+import KnowAkshaanMore from "./pages/KnowAkshaanMore.js"
 import { useContext } from "react";
 import { CounterContext } from "./context/CounterContext.js";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -45,6 +46,7 @@ function App() {
                 <Route index element={<Games />} />          {/* /fun-zone */}
                   <Route path="games">
                     <Route path="jigsaw" element={<Jigsaw/>} /> {/* /fun-zone/game/jigsaw */}
+                    <Route path="know-akshaan-more" element={<KnowAkshaanMore/>} /> 
                   </Route>
             </Route>
             </Routes>
