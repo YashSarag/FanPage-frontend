@@ -1,7 +1,7 @@
 import React from 'react'
 import hero_img from '../assets/hero-f.webp'
 import hero_img2 from '../assets/gallery-1.jpg';
-import hero_img3 from '../assets/gallery-36.jpg';
+import hero_img3 from '../assets/hero-img_3.jpg';
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import Timer from '../components/Timer';
@@ -19,7 +19,7 @@ function Home(){
           loading='lazy'
             src={hero_img}
           />
-          <img className='w-full relative hero-img2'
+          <img className='w-full relative hero-img2 scale-[1.37]'
           loading='lazy'
             src={hero_img3}
           />
