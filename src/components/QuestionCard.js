@@ -135,7 +135,7 @@ function QuestionCard({question,options,ans,file}){
 
                 {
                     <div className='max-w-max mx-auto text-center text-[20px] font-bold opacity-75 mt-[15px]'>
-                        <span>Ans : </span><span>{qAns && qAns.toUpperCase()[0]}) </span>{qAns && qAns.length>26 ? qAns.slice(1,26)+'...' : qAns &&qAns.slice(1)}
+                        <span>Ans : </span><span>{qAns && qAns.toUpperCase()[0]} </span>{qAns && qAns.length>26 ? qAns.slice(1,24)+'...' : qAns &&qAns.slice(1)}
                     </div>
                 }
 
